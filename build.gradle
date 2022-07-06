@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.google.inject:guice:5.1.0'
+    implementation 'com.microsoft.playwright:playwright:1.21.0'
+    implementation 'org.testng:testng:7.5'
+    implementation 'org.awaitility:awaitility:4.2.0'
+    implementation 'org.assertj:assertj-core:3.22.0'
+}
+
+tasks.withType(Test) {
+    systemProperties = [
+            browser : System.getProperty('browser', 'chrome'),
+            headless: System.getProperty('headless', 'false'),
+    ]
+}
+
+test {
+    useTestNG() {
+        parallel = "methods"
+        threadCount = 2
+    }
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="basic.Example" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-06T05:16:38" hostname="Mritunjais-MacBook-Pro.local" time="7.746">
+  <properties/>
+  <testcase name="browserContext" classname="basic.Example" time="7.746"/>
+  <system-out><![CDATA[Fast and reliable end-to-end testing for modern web apps | Playwright
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

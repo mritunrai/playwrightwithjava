@@ -1,0 +1,10 @@
+page/BasePage.java
+ page.BasePage
+SearchTests.java
+ SearchTests
+BaseTests.java
+ BaseTests
+basic/Example.java
+ basic.Example
+page/SearchPage.java
+ page.SearchPage
